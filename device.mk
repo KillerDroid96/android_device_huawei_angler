@@ -288,6 +288,14 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS := \
     device/huawei/angler/overlay
 
+# Allow tethering without provisioning app
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
+
+# Mobile Data provision prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.android.prov_mobiledata=false
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
 
