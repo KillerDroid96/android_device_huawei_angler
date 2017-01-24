@@ -427,9 +427,13 @@ PRODUCT_PACKAGES += \
 
 # limit dex2oat threads to improve thermals
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.boot-dex2oat-threads=4 \
-    dalvik.vm.dex2oat-threads=4 \
-    dalvik.vm.image-dex2oat-threads=4
+    dalvik.vm.boot-dex2oat-threads=6 \
+    dalvik.vm.dex2oat-threads=6 \
+    dalvik.vm.image-dex2oat-threads=6
+
+# old-apns.conf
+PRODUCT_COPY_FILES += \
+    device/huawei/angler/old-apns-conf.xml:system/etc/old-apns-conf.xml
 
 # Modem debugger
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
