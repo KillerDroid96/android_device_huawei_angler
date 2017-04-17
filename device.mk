@@ -30,15 +30,17 @@ PRODUCT_COPY_FILES += \
     device/huawei/angler/init.recovery.angler.rc:root/init.recovery.angler.rc \
     device/huawei/angler/init.angler.power.sh:system/bin/init.angler.power.sh \
     device/huawei/angler/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
-
+    
+######################################## My Changes ##################################################
 # Copy over our ramdisk files for Flash kernel
 PRODUCT_COPY_FILES += \
    device/huawei/angler/init.flash.rc:root/init.flash.rc \
    device/huawei/angler/init.profiles.rc:root/init.profiles.rc \
    device/huawei/angler/init.profiles.sh:root/init.profiles.sh \
    device/huawei/angler/init.special_power.sh:root/init.special_power.sh \
-   device/huawei/angler/msm_irqbalance.conf:root/msm_irqbalance.conf 
-
+   device/huawei/angler/msm_irqbalance.conf:root/msm_irqbalance.conf
+ 
+#######################################################################################################
 ifeq ($(TARGET_USES_CHINOOK_SENSORHUB),true)
 PRODUCT_COPY_FILES += \
     device/huawei/angler/init.angler.sensorhub.rc:root/init.angler.sensorhub.rc
@@ -223,10 +225,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.user=Varun
-
 
 # GPS
 PRODUCT_PACKAGES += \
