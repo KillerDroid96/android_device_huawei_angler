@@ -34,11 +34,11 @@ PRODUCT_COPY_FILES += \
 ######################################## My Changes ##################################################
 # Copy over our ramdisk files for Flash kernel
 PRODUCT_COPY_FILES += \
-   device/huawei/angler/init.flash.rc:root/init.flash.rc \
-   device/huawei/angler/init.profiles.rc:root/init.profiles.rc \
-   device/huawei/angler/init.profiles.sh:root/init.profiles.sh \
-   device/huawei/angler/init.special_power.sh:root/init.special_power.sh \
-   device/huawei/angler/msm_irqbalance.conf:root/msm_irqbalance.conf
+   vendor/cm/prebuilt/ramdisk/init.flash.rc:root/init.flash.rc \
+   vendor/cm/prebuilt/ramdisk/init.profiles.rc:root/init.profiles.rc \
+   vendor/cm/prebuilt/ramdisk/init.profiles.sh:root/init.profiles.sh \
+   vendor/cm/prebuilt/ramdisk/angler/init.special_power.sh:root/init.special_power.sh \
+   vendor/cm/prebuilt/ramdisk/msm_irqbalance.conf:root/msm_irqbalance.conf
  
 #######################################################################################################
 ifeq ($(TARGET_USES_CHINOOK_SENSORHUB),true)
