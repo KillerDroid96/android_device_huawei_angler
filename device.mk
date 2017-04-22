@@ -31,16 +31,6 @@ PRODUCT_COPY_FILES += \
     device/huawei/angler/init.angler.power.sh:system/bin/init.angler.power.sh \
     device/huawei/angler/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
     
-######################################## My Changes ##################################################
-# Copy over our ramdisk files for Flash kernel
-PRODUCT_COPY_FILES += \
-   vendor/cm/prebuilt/ramdisk/init.flash.rc:root/init.flash.rc \
-   vendor/cm/prebuilt/ramdisk/init.profiles.rc:root/init.profiles.rc \
-   vendor/cm/prebuilt/ramdisk/init.profiles.sh:root/init.profiles.sh \
-   vendor/cm/prebuilt/ramdisk/angler/init.special_power.sh:root/init.special_power.sh \
-   vendor/cm/prebuilt/ramdisk/msm_irqbalance.conf:root/msm_irqbalance.conf
- 
-#######################################################################################################
 ifeq ($(TARGET_USES_CHINOOK_SENSORHUB),true)
 PRODUCT_COPY_FILES += \
     device/huawei/angler/init.angler.sensorhub.rc:root/init.angler.sensorhub.rc
