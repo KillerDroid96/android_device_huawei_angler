@@ -532,6 +532,7 @@ PRODUCT_COPY_FILES += \
 # only include verity on user builds for Lineage
 ifeq ($(TARGET_BUILD_VARIANT),user)
   PRODUCT_COPY_FILES += device/huawei/angler/fstab-verity.angler:root/fstab.angler
+endif
 
 # b/28992626
 # For app investigation, make ASAN-lite only sanitize 32-bit.
