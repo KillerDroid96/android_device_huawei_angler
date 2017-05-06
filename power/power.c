@@ -58,7 +58,6 @@
 #define CPU6_ONLINE_PATH "/sys/devices/system/cpu/cpu6/online"
 #define CPU7_ONLINE_PATH "/sys/devices/system/cpu/cpu7/online"
 
-
 #define PLATFORM_SLEEP_MODES 2
 #define XO_VOTERS 3
 #define VMIN_VOTERS 0
@@ -250,7 +249,6 @@ static long long calc_timespan_us(struct timespec start, struct timespec end) {
     diff_in_us += (end.tv_nsec - start.tv_nsec) / NSINUS;
     return diff_in_us;
 }
-
 
 static void power_hint(struct power_module *module, power_hint_t hint,
         void *data)
