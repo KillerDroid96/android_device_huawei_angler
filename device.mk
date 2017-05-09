@@ -216,10 +216,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.user=Varun
-
-
 # GPS
 PRODUCT_PACKAGES += \
     libgps.utils \
