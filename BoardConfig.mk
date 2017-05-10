@@ -32,12 +32,12 @@ TARGET_2ND_CPU_VARIANT := cortex-a53.a57
 ENABLE_CPUSETS := true
 
 # Inline kernel building
-TARGET_GCC_VERSION_ARM64 := 6.x
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-6.x/bin
-KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
+#TARGET_GCC_VERSION_ARM64 := 6.x
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-6.x/bin
+#KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := flash_defconfig
+TARGET_KERNEL_CONFIG := lineageos_angler_defconfig
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -162,7 +162,7 @@ NXP_CHIP_TYPE := 2
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/angler-setup.sh
 
-USE_CLANG_PLATFORM_BUILD := true
+# USE_CLANG_PLATFORM_BUILD := true
 
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
