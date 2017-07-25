@@ -225,9 +225,9 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     gps.msm8994
 
-# Gello
-#PRODUCT_PACKAGES += \
-#    Gello
+# Jelly
+PRODUCT_PACKAGES += \
+    Jelly
 
 # Extra packages we can compile from source
 PRODUCT_PACKAGES += \
@@ -276,7 +276,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     libnfc-nci \
-    nfc_nci.angler \
+    nfc_nci.pn54x.default \
     NfcNci \
     Tag
 
